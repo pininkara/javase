@@ -1,6 +1,6 @@
 // 2022/1/13 16:58
 
-package com.pininkara.juc.queue;
+package com.pininkara.juc.collections.queue;
 
 import java.util.concurrent.ArrayBlockingQueue;
 

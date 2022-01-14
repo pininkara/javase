@@ -1,8 +1,7 @@
 // 2022/1/13 17:16
 
-package com.pininkara.juc.queue;
+package com.pininkara.juc.collections.queue;
 
-import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
