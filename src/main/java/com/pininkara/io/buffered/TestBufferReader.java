@@ -9,11 +9,12 @@ import java.io.IOException;
 public class TestBufferReader {
     public static void main(String[] args) throws IOException {
         String path="hello.txt";
+        String line;
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
         //按行读取
-        String line;
-        line = bufferedReader.readLine(); //返回null则为读完
+
+        //line = bufferedReader.readLine(); //返回null则为读完
 
         while ((line=bufferedReader.readLine())!=null){
             System.out.println(line);

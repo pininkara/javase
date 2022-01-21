@@ -1,18 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hoho</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>我的</title>
+
+    <style>
+        .myh1+h1 {
+            color: #da199c;
+        }
+
+        .myh2 {
+            color: aquamarine;
+            font-style: italic;
+        }
+
+        #myh3 {
+            color: blueviolet;
+            font-style: unset;
+        }
+
+        ul li:first-child{
+            color: rgb(255, 0, 234);
+        }
+
+        a[id=first]{
+            background-color: cadetblue;
+        }
+    </style>
 </head>
+
 <body>
-    <strong>粗体</strong>
-    <b>粗体&copy;</b>
-    <em>斜体</em>
-    <br>
+    
+    <h1><p>孙子</p></h1>
+    <h1 class="myh1">
+        <p>测试</p>
+    </h1>
+    <h1><p>孙子</p></h1>
+    <h1><p>孙子</p></h1>
+    <h3 id="myh3">id选择器</h3>
 
-    <a href="https://cn.bing.com/" target="_blank">点击前往必应</a>
-
+    <ul>
+        
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+        <li>444</li>
+    </ul>
+    
 </body>
+
 </html>
