@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<ul id="test_ul">
+    <li class="js">JavaScript</li>
+    <li id="py">Python</li>
+</ul>
+
+<script>
+    $('#test_ul li[id="py"]').text();
+    $('#test_ul').html();
+    $('#test_ul li[class=js]' ).css('color','red')
+</script>
+
+</body>
+</html>

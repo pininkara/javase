@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+mouse：<span id="mouseMove"></span>
+<div id="div" style="width: 500px;height: 500px;border: 1px solid red">
+    在这里移动鼠标试试
+</div>
+
+<script>
+    //当网页元素加载完毕后，相应事件
+    $(function () {
+        $('#div').mousemove(function (e){
+            $('#mouseMove').text('x：'+e.pageX+' y：'+e.pageY)
+        })
+    })
+</script>
+
+</body>
+</html>
