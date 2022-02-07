@@ -7,9 +7,15 @@
 <h1>Index</h1>
 <h2>Hello World!</h2>
 
-<form action="${pageContext.request.contextPath}/test" method="get">
+<form action="${pageContext.request.contextPath}/login" method="post">
     用户名：<input type="text" name="username"><br>
     密码：<input type="password" name="password"><br>
+    爱好：
+    <input type="checkbox" name="hobby" value="mmr">mmr
+    <input type="checkbox" name="hobby" value="code">code
+    <input type="checkbox" name="hobby" value="sing">sing
+    <input type="checkbox" name="hobby" value="movie">movie
+    <br>
     <input type="submit">
 </form>
 
