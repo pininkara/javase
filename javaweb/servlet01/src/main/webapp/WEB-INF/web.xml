@@ -34,8 +34,18 @@
         <session-timeout>15</session-timeout> <!--单位为分钟-->
     </session-config>
 
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>nnk.pininkara.servlet.CharacterEncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
-
+    <listener>
+        <listener-class>nnk.pininkara.servlet.OnlineCounterListener</listener-class>
+    </listener>
 
 
 

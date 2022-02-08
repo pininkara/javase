@@ -1,22 +1,19 @@
-// 2022/2/7 17:13
+// 2022/2/8 15:42
 
-package nnk.pininkara.cookie;
+package nnk.pininkara.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(name = "session2", urlPatterns = "/session2")
-public class SessionDemo02 extends HttpServlet {
+@WebServlet(name = "test2",urlPatterns = "/test2")
+public class TestServlet2 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        session.removeAttribute("name");
-        session.invalidate();
+        resp.getWriter().write("你好世界");
     }
 
     @Override
