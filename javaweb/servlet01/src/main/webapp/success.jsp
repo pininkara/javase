@@ -8,6 +8,8 @@
     <title>Title</title>
 </head>
 <body>
+
 <h1>Succeed</h1>
+<a href="/ser01/logout">注销</a>
 </body>
 </html>

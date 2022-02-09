@@ -7,7 +7,7 @@
 <h1>Index</h1>
 <h2>Hello World!</h2>
 
-<form action="${pageContext.request.contextPath}/login" method="post">
+<form action="${pageContext.request.contextPath}/login2" method="post">
     用户名：<input type="text" name="username"><br>
     密码：<input type="password" name="password"><br>
     爱好：

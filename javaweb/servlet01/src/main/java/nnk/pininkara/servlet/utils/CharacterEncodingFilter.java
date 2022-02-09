@@ -1,6 +1,6 @@
 // 2022/2/8 15:37
 
-package nnk.pininkara.servlet;
+package nnk.pininkara.servlet.utils;
 
 import javax.servlet.*;
 import java.io.IOException;

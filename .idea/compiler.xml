@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="servlet01" />
+        <module name="web01" />
         <module name="AnnotationReflection" />
-        <module name="javase" />
+        <module name="servlet01" />
+        <module name="mybatis" />
       </profile>
     </annotationProcessing>
   </component>

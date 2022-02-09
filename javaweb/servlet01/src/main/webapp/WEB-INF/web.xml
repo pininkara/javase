@@ -36,7 +36,7 @@
 
     <filter>
         <filter-name>CharacterEncodingFilter</filter-name>
-        <filter-class>nnk.pininkara.servlet.CharacterEncodingFilter</filter-class>
+        <filter-class>nnk.pininkara.servlet.utils.CharacterEncodingFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>CharacterEncodingFilter</filter-name>
@@ -44,7 +44,7 @@
     </filter-mapping>
 
     <listener>
-        <listener-class>nnk.pininkara.servlet.OnlineCounterListener</listener-class>
+        <listener-class>nnk.pininkara.servlet.utils.OnlineCounterListener</listener-class>
     </listener>
 
 

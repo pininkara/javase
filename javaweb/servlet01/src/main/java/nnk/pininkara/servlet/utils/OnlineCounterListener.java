@@ -1,6 +1,6 @@
 // 2022/2/8 16:11
 
-package nnk.pininkara.servlet;
+package nnk.pininkara.servlet.utils;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSessionEvent;

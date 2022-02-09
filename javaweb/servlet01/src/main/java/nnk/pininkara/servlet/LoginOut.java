@@ -1,4 +1,4 @@
-// 2022/2/8 17:00
+// 2022/2/9 10:30
 
 package nnk.pininkara.servlet;
 
@@ -9,19 +9,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "login2",urlPatterns = "/login2")
-public class LoginServlet2 extends HttpServlet {
+@WebServlet(name = "logout", urlPatterns = "/logout")
+public class LoginOut extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //获取前端请求参数
-        String username=req.getParameter("username");
-        System.out.println("Username："+username);
-        if (username.equals("admin")){//登录成功
-            req.getSession().setAttribute("USER_SESSION",req.getSession().getId());
-            resp.sendRedirect("/ser01/success.jsp");
-        }else {//登录失败
-            resp.sendRedirect("/ser01/noLogin.jsp");
+        Object session = req.getSession().getAttribute("USER_SESSION");
+        if (session != null) {
+            req.getSession().removeAttribute("USER_SESSION");
         }
+        resp.sendRedirect("/ser01/index.jsp");
     }
 
     @Override
