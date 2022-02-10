@@ -14,4 +14,9 @@
             </dataSource>
         </environment>
     </environments>
+
+    <mappers>
+        <mapper resource="nnk/dao/userMapper.xml"/>
+    </mappers>
+
 </configuration>

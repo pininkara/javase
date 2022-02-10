@@ -30,4 +30,27 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <resources>
+            <!--设置正常情况的resources目录下的properties文件-->
+            <resource>
+                <!--配置路径-->
+                <directory>src/main/resources</directory>
+                <includes>
+                    <!--包含什么文件-->
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <!--设置java路径的properties文件-->
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
 </project>
