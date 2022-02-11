@@ -34,4 +34,7 @@
         where name like "%"#{value}"%";
     </select>
 
+    <select id="getUserByLimit" parameterType="map" resultType="nnk.pojo.User">
+        select * from user limit #{startIndex},#{pageSize}
+    </select>
 </mapper>

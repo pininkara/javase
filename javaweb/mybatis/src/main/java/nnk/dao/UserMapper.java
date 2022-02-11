@@ -33,4 +33,11 @@ public interface UserMapper {
 
     //删除用户
     int deleteUser(int id);
+
+    //分页
+    List<User> getUserByLimit(Map<String,Integer> map);
+
+    //分页2
+    @Select("select * from user")
+    List<User> getUserByRowBounds();
 }

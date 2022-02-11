@@ -4,6 +4,7 @@ package nnk.dao;
 
 import nnk.pojo.User;
 import nnk.utils.MybatisUtils;
+import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
@@ -90,6 +91,57 @@ public class MyTest {
         sqlSession.commit();
         sqlSession.close();
     }
+
+    @Test
+    public void test8() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("startIndex", 0);
+        map.put("pageSize", 2);
+        List<User> list = mapper.getUserByLimit(map);
+        for (User user : list) {
+            System.out.println(user);
+        }
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+    @Test
+    public void test9() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        //通过java实现分页
+        RowBounds rowBounds = new RowBounds(0, 2);
+        List<User> list = sqlSession.selectList("nnk.dao.UserMapper.getUserByRowBounds",null,rowBounds);
+        for (User user : list) {
+            System.out.println(user);
+        }
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+    @Test
+    public void test10() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper2 mapper = sqlSession.getMapper(UserMapper2.class);
+        List<User> list = mapper.getUsers();
+        for (User user : list) {
+            System.out.println(user);
+        }
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+   @Test
+    public void test11() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper2 mapper = sqlSession.getMapper(UserMapper2.class);
+       System.out.println(mapper.getUserById(1, ""));
+       sqlSession.commit();
+        sqlSession.close();
+    }
+
+
 
 
 }
