@@ -1,8 +1,8 @@
 // 2022/2/11 16:58
 
-package nnk.dao;
+package nnk.my1.dao;
 
-import nnk.pojo.Teacher;
+import nnk.my1.pojo.Teacher;
 import org.apache.ibatis.annotations.Select;
 
 public interface TeacherMapper {

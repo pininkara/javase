@@ -1,8 +1,8 @@
 // 2022/2/10 13:50
 
-package nnk.dao;
+package nnk.my1.dao;
 
-import nnk.pojo.User;
+import nnk.my1.pojo.User;
 import nnk.utils.MybatisUtils;
 import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
@@ -23,7 +23,7 @@ public class MyTest {
         }
 
         //方式二：不推荐
-        List<User> list = sqlSession.selectList("nnk.dao.UserMapper.getUserList");
+        List<User> list = sqlSession.selectList("nnk.my1.dao.UserMapper.getUserList");
         for (User user : list) {
             System.out.println(user);
         }
@@ -112,7 +112,7 @@ public class MyTest {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         //通过java实现分页
         RowBounds rowBounds = new RowBounds(0, 2);
-        List<User> list = sqlSession.selectList("nnk.dao.UserMapper.getUserByRowBounds",null,rowBounds);
+        List<User> list = sqlSession.selectList("nnk.my1.dao.UserMapper.getUserByRowBounds",null,rowBounds);
         for (User user : list) {
             System.out.println(user);
         }

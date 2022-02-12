@@ -1,6 +1,6 @@
 // 2022/2/11 16:57
 
-package nnk.pojo;
+package nnk.my1.pojo;
 
 import lombok.Data;
 

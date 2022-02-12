@@ -1,7 +1,7 @@
 // 2022/2/11 15:39
-package nnk.dao;
+package nnk.my1.dao;
 
-import nnk.pojo.User;
+import nnk.my1.pojo.User;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 

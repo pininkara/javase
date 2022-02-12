@@ -1,11 +1,10 @@
 // 2022/2/10 13:31
 
-package nnk.dao;
+package nnk.my1.dao;
 
-import nnk.pojo.User;
+import nnk.my1.pojo.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 import java.util.Map;
@@ -40,4 +39,8 @@ public interface UserMapper {
     //分页2
     @Select("select * from user")
     List<User> getUserByRowBounds();
+
+
+    User queryUserById(int id);
+
 }

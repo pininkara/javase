@@ -1,6 +1,6 @@
 // 2022/2/10 13:29
 
-package nnk.pojo;
+package nnk.my1.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
