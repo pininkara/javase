@@ -10,6 +10,7 @@
         <module name="web01" />
         <module name="AnnotationReflection" />
         <module name="servlet01" />
+        <module name="springmvc" />
         <module name="mybatis" />
       </profile>
     </annotationProcessing>
