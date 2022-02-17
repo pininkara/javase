@@ -6,3 +6,11 @@ spring:
     password: MySQL80
     url: jdbc:mysql://localhost:3306/mybatis
     driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+
+mybatis:
+  mapper-locations: classpath:myabtis/mapper/*.xml
+  type-aliases-package: nnk.boot.pojo
+
+
