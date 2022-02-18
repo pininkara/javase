@@ -1,0 +1,14 @@
+server:
+  port: 8777
+spring:
+  datasource:
+    username: root
+    password: MySQL80
+    url: jdbc:mysql://localhost:3306/mybatis
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+
+mybatis:
+  type-aliases-package: com.example.shiro.pojo
+  mapper-locations: classpath:mapper/*.xml

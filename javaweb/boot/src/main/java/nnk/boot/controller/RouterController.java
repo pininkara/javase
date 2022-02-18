@@ -3,6 +3,7 @@
 package nnk.boot.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -10,7 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class RouterController {
 
     @RequestMapping({"/","/index"})
-    public String index(){
+    public String index(Model model){
+        model.addAttribute("msg","HelloShiro");
         return "index";
     }
 
@@ -32,6 +34,12 @@ public class RouterController {
     @RequestMapping("/level3/{id}")
     public String level3(@PathVariable("id") int id){
         return "views/level3/"+id;
+    }
+
+
+    @RequestMapping("/login")
+    public String login(){
+        return "views/login";
     }
 
 
