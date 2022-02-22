@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
     <meta charset="UTF-8">
     <title>Index</title>
 </head>
@@ -8,9 +8,15 @@
 
 <h1>首页</h1>
 
+
+
 <p th:text="${msg}"></p>
 <hr>
-<a href="/user/add">add</a>  |
+<div shiro:hasPerssion="user:add">
+    <a href="/user/add">add</a>
+</div>
+<div shiro:hasPerssion="user:update">
 <a href="/user/update">update</a>
+</div>
 </body>
 </html>

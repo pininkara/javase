@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="AnnotationReflection" />
         <module name="shiro" />
+        <module name="sw" />
         <module name="mybatis" />
         <module name="web01" />
         <module name="boot" />
@@ -21,6 +22,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="boot" options="-parameters" />
       <module name="shiro" options="-parameters" />
+      <module name="sw" options="-parameters" />
     </option>
   </component>
 </project>

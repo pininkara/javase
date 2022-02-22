@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/javaweb/pom.xml" />
         <option value="$PROJECT_DIR$/javaweb/boot/pom.xml" />
         <option value="$PROJECT_DIR$/javaweb/shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/javaweb/demo/swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/javaweb/sw/pom.xml" />
       </list>
     </option>
   </component>
